@@ -1,5 +1,5 @@
 import test from "ava";
-import { User, Product } from "./index";
+import { User, Product } from "./index.js";
 
 test("Testeo la clase User", (t) => {
   const user = new User("marce");
@@ -18,6 +18,7 @@ test("Testeo la clase Product y sus métodos", (t) => {
 
   // El método estatico findProductsBelow no existe
   // tenés que hacer que funcione
+
   const productosNoTanCaros = Product.findProductsBelow(250);
 
   user.addProduct(producto);
